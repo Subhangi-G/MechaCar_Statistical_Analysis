@@ -18,7 +18,7 @@ The statistical analysis will involve,
 
 ## Results and Summary
 
-### Liner Regression to Predict MPG
+### Linear Regression to Predict MPG
 
 A multiple linear regression was performed using all the six variables. Analyses may be drawn by answering the following questions.
 
@@ -38,7 +38,7 @@ The p-values for vehicle length, and ground clearance allows us to reject the nu
 
 - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?\
 The linear model has a R-squared value of around 71%. Therefore the model is explaining 71% of the observed variance.
-Three variables , vehicle weight, spoiler angle, and AWD do not add significant value to the liner regression model in explaining the variance. We know this because their p-values are higher than the accepted significant value of 0.05, and they also have very low correlation coefficients.\
+Three variables , vehicle weight, spoiler angle, and AWD do not add significant value to the linear regression model in explaining the variance. We know this because their p-values are higher than the accepted significant value of 0.05, and they also have very low correlation coefficients.\
 However, vehicle length, and ground clearance ought to be given weightage while re-creating the regression model.\
 Notice too that the p-value of the intercept is significant implying that there are other considerations which contribute towards the observed variance, which is not taken into account here. All of this gives the lower adjusted R-squared of 68%.\
 Removing the variables that do not add significant contribution to the model, and taking into account others that do, may bring up the adjusted R-squared value.
@@ -114,4 +114,4 @@ Similarly as above, a one way ANOVA test may be used to compare the variance for
 
 As we are testing the hypothesis that there is no significant difference between the means (or variance) of a metric across the different car models, an ANOVA test is the appropriate test to use with the dependent variable being the metric (such as the safety rating, or the cost), and the independent variable being the different elements (in this case cars identified by thier vehicle ID number) of the sample.
 
-If the results indicate that the null hypothesis (for mean and variance separately) cannot be rejected for any of the metrics, that might imply that the metric shows no significant difference between the different manufacturers. However is the null hypothesis is rejected, this might imply that the average value for that metric may play a part in the market performance of MechaCar. Further analysis will then be required which may test the dependence of the market performance upon that particular metric. For example if the metric safety rating shows a significant difference in variance across the different manufacturers, one may imagine that might contriute towards it's sales among the target consumers.
+If the results indicate that the null hypothesis (for mean and variance separately) cannot be rejected for a metric (either safety ratings, cost or city fuel efficiency), that means no significant difference is observed between the average value of that metric accross the different manufacturers. However if the null hypothesis is rejected, that will indicate that significant differences exists between the average values, for that particualar metric, with at least one of the manufacturers. This may lead to forming further hypothesis such as the average value for that metric may play a part in the market performance of MechaCar. Further analysis with more data will then be required which may test the dependence of the market performance upon that particular metric. For example if the metric, safety rating, shows a significant difference in variance across the different manufacturers, then the contribution of safety ratings on the sales among the target consumers can be further explored.
