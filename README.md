@@ -41,7 +41,7 @@ The linear model has a R-squared value of around 71%. Therefore the model is exp
 Three variables , vehicle weight, spoiler angle, and AWD do not add significant value to the linear regression model in explaining the variance. We know this because their p-values are higher than the accepted significant value of 0.05, and they also have very low correlation coefficients.\
 However, vehicle length, and ground clearance ought to be given weightage while re-creating the regression model.\
 Notice too that the p-value of the intercept is significant implying that there are other considerations which contribute towards the observed variance, which is not taken into account here. All of this gives the lower adjusted R-squared of 68%.\
-Removing the variables that do not add significant contribution to the model, and taking into account others that do, may bring up the adjusted R-squared value.
+Removing the variables that do not add significant contribution to the model, and taking into variables that do, may improve the R-squared value.
 
 ### Summary Statistics on Suspension Coils
 #### Total Summary
